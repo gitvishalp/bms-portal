@@ -1,0 +1,47 @@
+<app-header></app-header>
+<div class="contain">
+<div class="content">
+    <h3>Update Address</h3><hr>
+    <div [ngClass]="response.Status==200?'success':'fail'">
+        <p>{{Message}}</p>
+      </div> 
+    <form #AddressForm="ngForm" (ngSubmit)="updateAddress(AddressForm.value)" >
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Address Line1</span>
+            <input type="text" class="form-control" placeholder="Address Line 1" aria-label="AddressLine1" name="AddressLine1" aria-describedby="basic-addon1" ngModel>
+          </div> 
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Address Line2</span>
+            <input type="text" class="form-control" placeholder="Address Line 2" aria-label="AddressLine2" name="AddressLine2" aria-describedby="basic-addon1" ngModel>
+          </div> 
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">City</span>
+            <input type="text" class="form-control" placeholder="City" aria-label="City" name="City" aria-describedby="basic-addon1" ngModel>
+            <span class="input-group-text" id="basic-addon1">State</span>
+            <select class="form-select" aria-label="Default select example" aria-describedby="basic-addon1"  name="State" ngModel>
+                <option value="UTTAR PRADESH" selected>UTTAR PRADESH</option>
+                <option value="DELHI">DELHI</option>
+                <option value="MADHYA PRADESH">MADHYA PRADESH</option>
+                <option value="BIHAR">BIHAR</option>
+                <option value="UTTRAKHAND">UTTRAKHAND</option>
+                <option value="PUNJAB">PUNJAB</option>
+                <option value="RAJSTHAN">RAJSTHAN</option>
+                <option value="HARYANA">HARYANA</option>
+                <option value="GUJRAT">GUJRAT</option>
+              </select>
+          </div>   
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Country</span>
+            <select class="form-select" aria-label="Default select example" aria-describedby="basic-addon1" name="Country" ngModel>
+                <option value="INDIA" selected>INDIA</option>
+              </select>
+              <span class="input-group-text" id="basic-addon1">Postal Code</span>
+              <input type="text" class="form-control" placeholder="Postal Code" aria-label="Postal Code" name="PostalCode" aria-describedby="basic-addon1" ngModel>
+          </div> 
+          <div class="actions">
+            <input type="reset" value="Reset">
+            <input type="submit" value="Update">
+          </div>       
+    </form>
+</div>
+</div>

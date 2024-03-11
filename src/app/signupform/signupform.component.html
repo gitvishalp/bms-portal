@@ -1,0 +1,60 @@
+<div class="content">
+    <div class="row">
+          <div class="col">
+            <div class="text">
+                <img src="/assets/logo2.png">
+                <h1 class="n1">BMS Bank</h1>
+                <h4 class="slogan">Banking made easy...</h4>
+            </div>
+          </div>
+          <div class="col">
+        <div class="login-box"> 
+            <div class="box">
+                <h1 style="color:#0593BC;">Personal Details</h1><hr>
+                <form #loginForm="ngForm" (ngSubmit)="signup(loginForm.value)">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"><img src="/assets/india.png" height="20" width="30"></span>
+                        <input type="text" class="form-control" aria-describedby="basic-addon1" name="PhoneNumber" [(ngModel)]="PhoneNumber" readonly="true" ngModel required>
+                      </div>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"><i class="bi bi-key-fill"></i></span>
+                        <input type="password" class="form-control"  placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" name="Password" ngModel required>
+                      </div>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"><i class="bi bi-key-fill"></i></span>
+                        <input type="password" class="form-control"  placeholder="Confirm Password" aria-label="Password" aria-describedby="basic-addon1" name="Conf-Password" ngModel required>
+                      </div>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input type="text" class="form-control"  placeholder="Email Address" aria-label="Email" aria-describedby="basic-addon1" name="Email" ngModel required>
+                      </div>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">First Name</span>
+                        <input type="text" class="form-control"  placeholder="First Name" aria-label="FirstName" aria-describedby="basic-addon1" name="FirstName" ngModel required>
+                      </div>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Last Name</span>
+                        <input type="text" class="form-control"  placeholder="Last Name" aria-label="LastName" aria-describedby="basic-addon1" name="LastName" ngModel required>
+                      </div>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"><i class="bi bi-calendar-event"></i></span>
+                        <input type="date" class="form-control"  placeholder="Last Name" aria-label="dob" aria-describedby="basic-addon1" name="DOB" ngModel required>
+                      </div>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"><img src="/assets/india.png" height="20" width="30"></span>
+                        <select class="form-select" aria-label="Default select example" name="Country" [ngModel]="country" ngModel>
+                          <option selected value="INDIA">INDIA</option>
+                        </select>
+                      </div>
+                      <div [ngClass]="response.Status==200?'success':'fail'">
+                        <p>{{Message}}</p>
+                      </div> 
+                      <div class="button">
+                        <input type="submit" class="btn" value="Signup">
+                      </div>
+                </form>
+            </div>    
+        </div>
+          </div>
+        </div>
+    </div>

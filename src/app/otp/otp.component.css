@@ -1,0 +1,62 @@
+.content{
+    background-image: url('/assets/back.jpg');
+    background-size: cover;
+}
+.login-box{
+    width: 600px;
+    height: 550px;
+    margin-top: 60px;
+    padding:50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.box{
+    text-align: center;
+    backdrop-filter: blur(2px);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 400px;
+    height: 350px;
+    padding: 50px;
+    border-radius: 20px;
+}
+.btn{
+    color: #fff;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 5px;
+    background-color: #0593BC;
+}
+.btn:hover{
+    background-color: #FFC300;
+}
+a{
+  text-decoration: none;  
+  color: #0593BC;
+}
+
+.text{
+    text-align: center;
+}
+.text img{
+    margin-top: 30px;
+}
+.text .n1{
+    color: #0593BC;
+    font-weight: bold;
+}
+.text .slogan{
+    color: #E8B203;
+}
+.otp-input{
+    margin-left: 5px;
+}
+input[type="text"]{
+    width: 50px;
+    height: 50px;
+    padding:15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0593BC;
+    border: 2px solid #0593BC;
+    border-radius: 5px;
+}

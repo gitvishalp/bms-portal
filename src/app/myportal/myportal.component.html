@@ -1,0 +1,123 @@
+<app-header></app-header>
+<div class="contain">
+<div class="main-content">
+    <h3>Personal Details</h3><hr>
+    <div class="my-row">
+        <div class="my-col key">
+            USER ID
+        </div>
+        <div class="my-col value">
+            {{userResponse.UserId}}
+        </div>
+        <div class="my-col key">
+            CREATED AT
+        </div>
+        <div class="my-col value">
+            {{userResponse.CreatedAt}}
+        </div>
+    </div>
+    <div class="my-row">
+        <div class="my-col key">
+            FIRST NAME
+        </div>
+        <div class="my-col value">
+            {{userResponse.FirstName}}
+        </div>
+        <div class="my-col key">
+            LAST NAME
+        </div>
+        <div class="my-col value">
+            {{userResponse.LastName}}
+        </div>
+    </div>
+    <div class="my-row">
+        <div class="my-col key">
+            DATE OF BIRTH
+        </div>
+        <div class="my-col value">
+            {{userResponse.DOB}}
+        </div>
+        <div class="my-col key">
+            COUNTRY
+        </div>
+        <div class="my-col value">
+            {{userResponse.Country}}
+        </div>
+    </div>
+    <h3>Contact Details</h3><hr>
+    <div class="my-row">
+        <div class="my-col key">
+            PHONE NUMBER
+        </div>
+        <div class="my-col value">
+            {{userResponse.PhoneNumber}}
+        </div>
+        <div class="my-col key">
+            EMAIL ADDRESS
+        </div>
+        <div class="my-col value">
+            {{userResponse.EmailAddress}}
+        </div>
+    </div>
+    <h3>Address <button class="ico-btn" routerLink="/update-address"><i class="bi bi-pencil-square"></i></button></h3><hr>
+    <div class="address" *ngIf="hasAddress">
+        <div class="my-row">
+            <div class="my-col key">
+                ADDRESS ID
+            </div>
+            <div class="my-col value">
+                {{addressResponse.AddressId}}
+            </div>
+            <div class="my-col key">
+                UPDATED AT
+            </div>
+            <div class="my-col value">
+                {{addressResponse.CreatedAt}}
+            </div>
+        </div>
+        <div class="my-row">
+            <div class="my-col key">
+                ADDRESS LINE1
+            </div>
+            <div class="my-col value">
+                {{addressResponse.AddressLine1}}
+            </div>
+            <div class="my-col key">
+                ADDRESS LINE2
+            </div>
+            <div class="my-col value">
+                {{addressResponse.AddressLine2}}
+            </div>
+        </div>
+        <div class="my-row">
+            <div class="my-col key">
+                CITY
+            </div>
+            <div class="my-col value">
+                {{addressResponse.City}}
+            </div>
+            <div class="my-col key">
+                STATE
+            </div>
+            <div class="my-col value">
+                {{addressResponse.State}}
+            </div>
+        </div>
+        <div class="my-row">
+            <div class="my-col key">
+                COUNTRY
+            </div>
+            <div class="my-col value">
+                {{addressResponse.Country}}
+            </div>
+            <div class="my-col key">
+                POSTAL CODE
+            </div>
+            <div class="my-col value">
+                {{addressResponse.PostalCode}}
+            </div>
+        </div>
+    </div>
+   
+</div>
+</div>

@@ -1,0 +1,87 @@
+
+.header{
+    display: flex;
+    background-size: cover;
+    background-color: #ECECEB;
+}
+.nav-bar{
+    width: 100%;
+    margin-top: 25px;
+}
+.nav{ 
+   background-color: #0593BC;
+   font-size: large;
+   border-radius: 10px;
+}
+.nav a{
+    color: #fff;
+    text-decoration: none;
+}
+.nav a:hover{
+    color: #FFC300;
+    background-color: #02647f;
+}
+.logo{
+    padding: -20px;
+    margin: -40px;
+    margin-top: -25px;
+    margin-bottom: -25px;
+}
+.logo img{
+  height: 150px;
+  width: 200px;
+  object-fit: fill;
+}
+button{
+    text-decoration: none;
+    color: #fff;
+}
+button:hover{
+    color:#FFC300;
+}
+.logout{
+    margin-left: auto;
+    margin-right: 0;
+}
+.buton{
+    position: absolute;
+    border-radius: 5px;
+    background-color: #ECECEB;
+    color:#02647f;
+    border: none;
+    height: 40px;
+    width: 40px;
+}
+.buton:hover{
+    background-color: #02647f;
+    color: #ECECEB;
+}
+.offcanvas{
+    width: fit-content;
+}
+.canvas-item{
+    cursor: pointer;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ECECEB;
+}
+
+.canvas-item a{
+    color: #0593BC;
+    text-decoration: none;
+}
+.canvas-item:hover{
+    background-color: #ECECEB;
+}
+.lg{
+    background-color: #0593BC;
+    color: #ECECEB;
+    margin-top: 30px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+.lg:hover{
+    background-color: #02647f;
+    color: #ECECEB;
+}

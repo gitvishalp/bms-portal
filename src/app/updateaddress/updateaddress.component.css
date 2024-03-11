@@ -1,0 +1,27 @@
+h3{
+    margin-top: 20px;
+}
+.content{
+    overflow: auto;
+    height: 500px;
+    margin-top: 20px;
+    margin-left:150px;
+    width: 70%;
+}
+.actions{
+    width: 100%;
+    padding: 30px;
+    text-align: right;
+}
+input[type="submit"],input[type="reset"]{
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0593BC;
+    color: #fff;
+    height:40px;
+    width: 150px;
+}
+input[type="submit"]:hover,input[type="reset"]:hover{
+    background-color: #02647f;
+}

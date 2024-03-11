@@ -1,0 +1,39 @@
+<div class="content">
+<div class="row">
+      <div class="col">
+        <div class="text">
+            <img src="/assets/logo2.png">
+            <h1 class="n1">BMS Bank</h1>
+            <h4 class="slogan">Banking made easy...</h4>
+        </div>
+      </div>
+      <div class="col">
+    <div class="login-box">
+        <div class="box">
+            <h1 style="color:#0593BC;">Login</h1><hr>
+            <form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-phone-fill"></i></span>
+                    <input type="text" class="form-control" placeholder="Phone Number" aria-label="PhoneNumber" aria-describedby="basic-addon1" maxlength="10" name="PhoneNumber" ngModel>
+                  </div>  
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-key-fill"></i></span>
+                    <input type="password" class="form-control"  placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" name="Password" ngModel>
+                  </div>
+                  <div [ngClass]="response.Status==200?'success':'fail'">
+                    <p>{{Message}}</p>
+                  </div> 
+                  <div class="links" style="text-align: left;">
+                    <a routerLink="/forget-password">Forget Password?</a><br>
+                    <a routerLink="/signup">haven't account? Signup now</a>
+                  </div>
+                  <div class="button">
+                    <input type="reset" class="btn" value="Reset">
+                    <input type="submit" class="btn" value="Login">
+                  </div>
+            </form>
+        </div>    
+    </div>
+      </div>
+    </div>
+</div>

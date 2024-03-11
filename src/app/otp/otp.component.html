@@ -1,0 +1,33 @@
+<div class="content">
+    <div class="row">
+          <div class="col">
+            <div class="text">
+                <img src="/assets/logo2.png">
+                <h1 class="n1">BMS Bank</h1>
+                <h4 class="slogan">Banking made easy...</h4>
+            </div>
+          </div>
+          <div class="col">
+        <div class="login-box">
+            <div class="box">
+                <h1 style="color:#0593BC;">OTP</h1><hr>
+                <form #otpForm="ngForm" (ngSubmit)="verifyOtp(otpForm.value)">
+                    <div class="input">
+                        <input type="text" class="otp-input" maxlength="1" name="t1" ngModel>
+                        <input type="text" class="otp-input" maxlength="1" name="t2" ngModel>
+                        <input type="text" class="otp-input" maxlength="1" name="t3" ngModel>
+                        <input type="text" class="otp-input" maxlength="1" name="t4" ngModel>
+                      </div>  
+                      <div [ngClass]="response.Status==200?'success':'fail'">
+                        <p>{{Message}}</p>
+                      </div> 
+                      <a routerLink="/signup">resend</a>
+                      <div class="button">
+                        <input type="submit" class="btn" value="Verify OTP">
+                      </div>
+                </form>
+            </div>    
+        </div>
+          </div>
+        </div>
+    </div>

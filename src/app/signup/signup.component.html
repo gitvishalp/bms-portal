@@ -1,0 +1,31 @@
+<div class="content">
+    <div class="row">
+          <div class="col">
+            <div class="text">
+                <img src="/assets/logo2.png">
+                <h1 class="n1">BMS Bank</h1>
+                <h4 class="slogan">Banking made easy...</h4>
+            </div>
+          </div>
+          <div class="col">
+        <div class="login-box"> 
+            <div class="box">
+                <h1 style="color:#0593BC;">Signup</h1><hr>
+                <form #loginForm="ngForm" (ngSubmit)="sendOtp(loginForm.value)">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"><img src="/assets/india.png" height="20" width="30"></span>
+                        <input type="text" class="form-control" placeholder="Phone Number" aria-label="PhoneNumber" maxlength="10" minlength="10" aria-describedby="basic-addon1" name="PhoneNumber" ngModel>
+                      </div>
+                      <div [ngClass]="response.Status==200?'success':'fail'">
+                        <p>{{Message}}</p>
+                      </div> 
+                      <a routerLink="/login">Alreday have account? Login</a>
+                      <div class="button">
+                        <input type="submit" class="btn" value="Signup">
+                      </div>
+                </form>
+            </div>    
+        </div>
+          </div>
+        </div>
+    </div>
