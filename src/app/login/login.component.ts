@@ -14,7 +14,9 @@ response:any={}
 Message:any=''
 constructor(private router:Router,private route:ActivatedRoute, private userService:UserserviceService){}
 ngOnInit(): void {
-    
+    if(localStorage.getItem("userLogin")==='true'){
+        this.router.navigate(['/home'])
+    }
 }
 
 login(formData:{PhoneNumber:String,Password:String}){

@@ -1,0 +1,13 @@
+.card-container{
+    display:flex;
+}
+.card{
+    margin-left: 10px;
+}
+.btn{
+    background-color: #0593BC;
+    color:#fff;
+}
+.btn:hover{
+    background-color: #02647f;
+}
